@@ -17,7 +17,7 @@ instrumentator.instrument(app).expose(app, include_in_schema=False, should_gzip=
 
 @app.get("/")
 def root():
-    return "Wine Quality Ratings"
+    return "Wine Quality Ratings !"
 
 
 @app.post("/predict", response_model=Rating)
